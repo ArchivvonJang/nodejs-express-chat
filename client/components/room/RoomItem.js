@@ -11,12 +11,21 @@ function RoomItem(props) {
     <li className={classes.item}>
       <Card>
         <div className={classes.content}>
-        <span className={classes.title}>{props.name}</span>
-        <span className={classes.owner}>{props.owner}</span>
-          
-          {props.number_part} {'/'} {props.max_part}
-
-          {props.date}
+        <span className={classes.title}>
+          {props.name}
+          {' '}
+          <span className={classes.subTitle}>
+            {'('}{props.number_part} {'/'} {props.max_part}{')'}
+          </span>
+        </span>
+        <p/>
+        <span className={classes.owner}>
+          {props.owner}
+          {' '}
+          <span className={classes.date}>
+            {props.date}
+          </span>
+        </span>   
         </div>
         <div className={classes.actions}>
           <button onClick={showDetailsHandler}>Enter the Room</button>

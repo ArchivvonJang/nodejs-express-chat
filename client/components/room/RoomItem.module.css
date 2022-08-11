@@ -5,18 +5,34 @@
   .content {
     text-align: left;
     padding: 1rem;
+    max-height: 10px;
   }
   
 
   .title {
-    font-size: 0.95rem;
-    color: #2c292b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f2f2f;
     text-align: right;
   }
   
+  .subTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #939193;
+    text-align: right;
+  }
+
   .owner {
-    font-size: 0.95rem;
-    color: #2c292b;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #484848;
+    text-align: right;
+  }
+
+  .date {
+    font-size: 0.7rem;
+    color: #939193;
     text-align: right;
   }
 

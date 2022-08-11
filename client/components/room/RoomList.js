@@ -1,9 +1,13 @@
 import RoomItem from './RoomItem';
 import classes from './RoomList.module.css';
+import _Footer from '../footer/Footer';
+import _Header from '../header/Header';
 
 function Roomlist(props) {
   return (
-    <ul className={classes.list}>
+    <>
+    <_Header/>
+    <div className={classes.list}>
         <div className={classes.title}>전체 목록</div>  
       {props.roomItems.map((roomItem) => (
         <RoomItem
@@ -15,7 +19,9 @@ function Roomlist(props) {
           date={roomItem.reg_date}
         />
       ))}
-    </ul>
+    </div>
+    <_Footer/>
+    </>
   );
 }
 
